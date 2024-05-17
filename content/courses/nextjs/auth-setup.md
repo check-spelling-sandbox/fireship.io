@@ -33,11 +33,11 @@ Create the following route file `api/auth/[...nextauth]/route.ts`.
 ```tsx
 import NextAuth from 'next-auth';
 import type { NextAuthOptions } from 'next-auth';
-import GithubProvider from 'next-auth/providers/github';
+import GitHubProvider from 'next-auth/providers/github';
 
 export const authOptions: NextAuthOptions = {
   providers: [
-    GithubProvider({
+    GitHubProvider({
       clientId: process.env.GITHUB_ID!,
       clientSecret: process.env.GITHUB_SECRET!,
     }),
